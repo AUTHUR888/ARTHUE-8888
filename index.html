@@ -472,25 +472,23 @@
                 let json = await res.json();
                 let record = json.record || {};
 
-                users = record.users || [{ username: 'admin', pass: '0123456789', role: 'ADMIN', credit: 1000000, answer: 'admin' }];
+                users = record.users || [{ username: 'admin', pass: '1234', role: 'ADMIN', credit: 9999, answer: 'admin' }];
                 gachaItems = record.gachaItems || [
-                    { id: 1, label: 'ลิง', points: 0, rate: 5, color: '#3b82f6' },
-                    { id: 2, label: 'แพ็คAED', points: 0, rate: 10, color: '#eab308' },
-                    { id: 3, label: 'แพ็กเกราะ', points: 0, rate: 10, color: '#64748b' },
-                    { id: 4, label: 'แพ็กยา', points: 0, rate: 10, color: '#10b981' },
-                    { id: 5, label: 'แพ็แหล็กทอง', points: 0, rate: 15, color: '#ec4899' }
-                    { id: 6, label: 'พอยดิส10', points: 0, rate: 20, color: '#0000FF' }
-                    { id: 7, label: 'หมุนฟรี1รอบ', points: 20000, rate: 30, color: '#FFA500' }
-                    { id: 8, label: 'เกลือ', points: 0, rate: 40, color: '#666666' }
+                    { id: 1, label: 'โบนัส 10 P', points: 10, rate: 40, color: '#3b82f6' },
+                    { id: 2, label: 'สกิน EVO UR', points: 500, rate: 5, color: '#eab308' },
+                    { id: 3, label: 'เกลือ (0 P)', points: 0, rate: 30, color: '#64748b' },
+                    { id: 4, label: 'โบนัส 100 P', points: 100, rate: 15, color: '#10b981' },
+                    { id: 5, label: 'โค้ดเพชร FF', points: 250, rate: 10, color: '#ec4899' }
                 ];
                 gachaPrice = record.gachaPrice || 50;
                 playlist = record.playlist || [
-                    { id: 1, title: 'EDM Cyberpunk Beats', url: 'https://youtu.be/owjSh7kSfFc?si=CjmxCa9eA3tZCusY' },
+                    { id: 1, title: 'EDM Cyberpunk Beats', url: 'https://youtu.be/36YnV9STBqc' },
+                    { id: 2, title: 'Gaming Lounge Music', url: 'https://youtu.be/5qap5aO4i9A' }
                 ];
                 webSettings = record.webSettings || {
                     name: 'IJERDID PLATFORM',
                     tagline: 'GACHA & CASINO PLATFORM',
-                    announcement: 'ยินดีตอ้นรับเข้าสู่เว้บARTHUR888!',
+                    announcement: 'ยินดีต้อนรับสู่ระบบเว็บสุ่มรางวัลและคาสิโนบาคาร่าออนไลน์ สมัครสมาชิกรับเครดิตฟรีเริ่มต้น!',
                     bannerImg: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1000&auto=format&fit=crop&q=80',
                     bannerTitle: 'วงล้อกาชาปอง UR & มินิเกมบาคาร่าสุดมันส์'
                 };
